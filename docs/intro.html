@@ -461,28 +461,19 @@ Ross Ihaka: “Sure, that sounds like fun.”<span class="citation" data-cites="
 </section>
 <section id="câu-văn-trong-r-2" class="slide level2">
 <h2>Câu văn trong R</h2>
-<p>Ví dụ:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">mean</span>(<span class="at">x =</span> df<span class="sc">$</span>col1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Tên câu lệnh là <code>mean</code>: chúng ta đang yêu cầu máy tính hãy tính giá trị trung bình của 1 biến.</li>
-</ul>
-</section>
-<section id="câu-văn-trong-r-3" class="slide level2">
-<h2>Câu văn trong R</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">mean</span>(<span class="at">x =</span> df<span class="sc">$</span>col1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<ul>
-<li>Các tham số là <code>x</code> và <code>na.rm</code>:
+<li><p>Tên câu lệnh là <code>mean</code>: chúng ta đang yêu cầu máy tính hãy tính giá trị trung bình của 1 biến.</p></li>
+<li><p>Các tham số là <code>x</code> và <code>na.rm</code>:</p>
 <ul>
 <li><code>x</code>: là data đầu vào, ở đây chúng ta viết <code>x = df$col1</code> để cho máy tính biết data đầu vào là cột <code>col1</code> trong bảng data <code>df</code>.</li>
 <li><code>na.rm</code>: là yêu cầu cụ thể cách giải quyết khi gặp missing value (NA), ở đây chúng ta lựa chọn <code>na.rm = TRUE</code> nghĩa là nếu cột <code>col1</code> có NA thì bỏ những giá trị NA đi trước khi tính trung bình.</li>
 </ul></li>
 </ul>
 </section>
-<section id="câu-văn-trong-r-4" class="slide level2">
+<section id="câu-văn-trong-r-3" class="slide level2">
 <h2>Câu văn trong R</h2>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
@@ -490,10 +481,23 @@ Ross Ihaka: “Sure, that sounds like fun.”<span class="citation" data-cites="
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<p><strong>Lưu ý</strong></p>
 </div>
 <div class="callout-content">
 <p>Để đọc hướng dẫn sử dụng về câu lệnh, gõ <code>?tên-câu-lệnh</code>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Bài tập</strong></p>
+</div>
+<div class="callout-content">
+<p>Nhập <code>?mean</code> để đọc hướng dẫn sử dụng lệnh <code>mean()</code></p>
 </div>
 </div>
 </div>
@@ -566,7 +570,7 @@ Ross Ihaka: “Sure, that sounds like fun.”<span class="citation" data-cites="
 <p>R packages là các gói phần mềm được viết bằng ngôn ngữ lập trình R để thực hiện một số tác vụ cụ thể.</p>
 <p>Cài đặt R packages bằng:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">install.packages</span>(<span class="st">"readxl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">install.packages</span>(<span class="st">"readxl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
@@ -589,7 +593,7 @@ Ross Ihaka: “Sure, that sounds like fun.”<span class="citation" data-cites="
 <h2>Sử dụng R packages</h2>
 <p>Sau khi cài đặt thì package sẽ trở thành một “thư viện” trong R. Để gọi thư viện này, dùng:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">

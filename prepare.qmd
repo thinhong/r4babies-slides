@@ -40,7 +40,7 @@ Sau khi làm các bước trên, click vào title bar của Explorer sẽ thấy
 
 ![](img/prepare/path-win-2.png)
 
-::: callout-important
+::: {.callout-important}
 # Lưu ý
 
 Trong Windows, khi copy path vào R cần sửa lại theo 1 trong 2 cách sau:
@@ -168,6 +168,11 @@ Tương tự, chúng ta đang ở trong folder `/data` nằm trong `/r4babies`, 
 Để tránh bị lỗi trong quá trình sử dụng R, nên đặt tên files, folders theo các quy tắc sau:
 
 -   Không đặt tên chữ viết hoa viết thường lẫn lộn, nếu cần thì chỉ đặt theo quy luật camelCase (viết hoa chữ cái đầu của các từ sau từ đầu tiên, ví dụ `dataSoiHcm`) hoặc PascalCase (viết hoa chữ cái đầu của tất cả các từ, ví dụ `DataSoiHcm`)
+
+## Quy tắc đặt tên files, folders
+
+Để tránh bị lỗi trong quá trình sử dụng R, nên đặt tên files, folders theo các quy tắc sau:
+
 -   Không có khoảng trống `" "` trong tên, có thể đặt kiểu camelCase, hoặc sử dụng dấu `-`, `_` thay thế các khoảng trống: ví dụ không dùng tên `data soi HCM 2023.xlsx` mà có thể đặt là `dataSoiHcm2023.xlsx`, hoặc `data-soi-hcm-2023.xlsx`, hoặc `data_soi_hcm_2023.xlsx`
 
 ## R project
@@ -313,10 +318,12 @@ df <- read.table(file = "data/life-exp.csv", header = T, sep = ",")
 head(df)
 ```
 
-::: callout-note
+::: {.callout-note}
+
 Dấu `<-` dùng để gán kết quả của một function cho một đối tượng (object) trong R. Nếu chỉ viết `read.table(file = "data/life-exp.csv", header = T, sep = ",")` thì R không lưu lại kết quả sau khi đọc mà chỉ hiển thị ra màn hình.
 
 Sau khi gán kết quả đọc của `read.table()` vào object `df`, dùng lệnh `head(df)` để hiển thị 6 dòng đầu tiên của bảng.
+
 :::
 
 ## `read.csv()`

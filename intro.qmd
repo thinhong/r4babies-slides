@@ -54,19 +54,11 @@ tên-câu-lệnh(tên-tham-số = data-đầu-vào hoặc lựa-chọn)
 
 ## Câu văn trong R
 
-Ví dụ:
-
 ```{r, eval = F}
 mean(x = df$col1, na.rm = TRUE)
 ```
 
 - Tên câu lệnh là `mean`: chúng ta đang yêu cầu máy tính hãy tính giá trị trung bình của 1 biến.
-
-## Câu văn trong R
-
-```{r, eval = F}
-mean(x = df$col1, na.rm = TRUE)
-```
 
 - Các tham số là `x` và `na.rm`:
   - `x`: là data đầu vào, ở đây chúng ta viết `x = df$col1` để cho máy tính biết data đầu vào là cột `col1` trong bảng data `df`.
@@ -76,7 +68,17 @@ mean(x = df$col1, na.rm = TRUE)
 
 ::: {.callout-important}
 
+# Lưu ý
+
 Để đọc hướng dẫn sử dụng về câu lệnh, gõ `?tên-câu-lệnh`.
+
+:::
+
+::: {.callout-note}
+
+# Bài tập
+
+Nhập `?mean` để đọc hướng dẫn sử dụng lệnh `mean()`
 
 :::
 
