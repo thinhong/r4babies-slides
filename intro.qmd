@@ -241,4 +241,11 @@ Kết quả `knit` như sau:
 
 ![](img/intro/rmd-outp.png)
 
+## Mục tiêu
+
+1. Hiểu ngôn ngữ lập trình là gì và cách học ngôn ngữ lập trình
+2. Hiểu sự khác nhau giữa R và RStudio
+3. Biết cách cài đặt package và gọi library trong R
+4. Biết cách viết file R Script và R Markdown
+
 ## References
