@@ -126,7 +126,7 @@ RStudio là một môi trường phát triển tích hợp (integrated developme
 
 ## RStudio
 
-![](img/intro/rstudio.png)
+![](img/intro/rstudio_components.png)
 
 ## R và RStudio
 
