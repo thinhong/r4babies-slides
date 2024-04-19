@@ -40,7 +40,7 @@ Sau khi làm các bước trên, click vào title bar của Explorer sẽ thấy
 
 ![](img/prepare/path-win-2.png)
 
-::: {.callout-important}
+::: callout-important
 # Lưu ý
 
 Trong Windows, khi copy path vào R cần sửa lại theo 1 trong 2 cách sau:
@@ -226,8 +226,8 @@ df <- read.csv("../data/data.csv")
 
 Chúng ta có thể gặp các files data ở rất nhiều format khác nhau, như `.csv`, `.txt`, `.json`, `.xlsx`, `.dta`... Tuy nhiên, một cách đơn giản, có thể chia các files thành 2 loại:
 
-- Text files
-- Binary files
+-   Text files
+-   Binary files
 
 ## Text files
 
@@ -318,12 +318,10 @@ df <- read.table(file = "data/life-exp.csv", header = T, sep = ",")
 head(df)
 ```
 
-::: {.callout-note}
-
+::: callout-note
 Dấu `<-` dùng để gán kết quả của một function cho một đối tượng (object) trong R. Nếu chỉ viết `read.table(file = "data/life-exp.csv", header = T, sep = ",")` thì R không lưu lại kết quả sau khi đọc mà chỉ hiển thị ra màn hình.
 
 Sau khi gán kết quả đọc của `read.table()` vào object `df`, dùng lệnh `head(df)` để hiển thị 6 dòng đầu tiên của bảng.
-
 :::
 
 ## `read.csv()`
