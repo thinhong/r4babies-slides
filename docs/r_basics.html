@@ -1203,10 +1203,10 @@ dân tộc</td>
 <p><em>VD:</em> để tìm string chứa các nguyên âm, người ta có thể sử dụng bộ ký tự này: <code>"[aeiou]"</code>.</p>
 <p>Các bộ ký tự đặc biệt trong R</p>
 <div class="r-hstack">
-<table>
+<table style="width:99%;">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 64%">
+<col style="width: 33%">
+<col style="width: 65%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1277,9 +1277,9 @@ dân tộc</td>
 </div>
 </div>
 </section>
-<section id="regex-3" class="slide level2">
-<h2>Regex</h2>
-<div class="r-fit-text">
+<section id="regex-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Regex</h2>
+<div class="r-fit-text" style="font-size:20px">
 <p><strong>Bộ định lượng</strong> chỉ định độ dài của pattern</p>
 <p>Bộ định lượng là các số được viết trong dấu ngoặc nhọn <code>{ }</code> sau pattern mà chúng đang định lượng.</p>
 <p>Ngoài ra có 2 ký tự đặc biệt khác cho bộ định lượng, bao gồm:</p>
@@ -1287,14 +1287,12 @@ dân tộc</td>
 <li><p>Dấu <code>*</code> : khớp khi có 0 hoặc nhiều hơn pattern được định lượng.</p></li>
 <li><p>Dấu <code>+</code> : khớp khi có 1 hoặc nhiều hơn pattern được định lượng.</p></li>
 </ul>
-<div class="fragment">
 <p><em>VD</em>:</p>
 <ul>
 <li><p><code>"A{2}"</code> quy định khớp khi có hai chữ cái A viết hoa.</p></li>
 <li><p><code>"[:digit:]{2}"</code> quy định khớp khi có hai chữ số.</p></li>
 <li><p><code>"[:alpha:]+"</code> quy định khớp khi có ít nhất 1 chữ cái.</p></li>
 </ul>
-</div>
 </div>
 </section>
 <section id="sử-dụng-hàm-của-stringr-cùng-regex" class="slide level2" data-auto-animate="true">
